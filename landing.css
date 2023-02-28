@@ -209,6 +209,16 @@ footer .timezone{
     border: 2px solid black;
     height: 100px;
 }
+.service-txt a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.service-txt a:hover{
+    font-size: 17px;
+    font-weight: 850;
+}
 .new-items{
     display: flex;
     justify-content: space-between;
