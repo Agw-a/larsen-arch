@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Clash Display', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
-    font-family: 'Poppins', sans-serif;
     height: 100vh;
 
 }
@@ -15,7 +14,13 @@ body{
 }
 .topnav{
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
+    border-bottom: 1px solid grey;
+}
+.topnav:hover{
+    border-bottom: 2px solid black;
 }
 .topnav a{
     display:  block;
@@ -27,7 +32,9 @@ body{
     color: black;
 }
 .topnav a:hover{
-    background-color: aliceblue;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
     cursor: pointer;
 }
 .topnav a.active{
@@ -37,7 +44,11 @@ body{
 .topnav .toggle{
     display: none;
 }
-
+.item-title span{
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
 .side-side{
     display: flex;
     justify-content: space-between;
@@ -57,8 +68,7 @@ body{
     font-weight: 700;
 }
 .category{
-    border-radius: 8px;
-    border: 2px solid black;
+    font-weight: 100;
     padding: 4px;
 }
 section{
@@ -120,6 +130,7 @@ footer .timezone{
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
+    line-height: 24px;
 }
 .contact-us a{
     color: black;
@@ -202,17 +213,107 @@ footer .timezone{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+.new-items:hover{
     border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.new-items button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
 }
 .icon{
     color: black;
     font-size: 15px;
 }
+.service div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.service div button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: grey;
+}
+.service div:hover, .service div button:hover{
+    cursor: pointer;
+    color: black;
+}
 @media screen and (max-width: 1200px) {
+
+    .category{
+        font-size: 10px;
+    }
+    section{
+        margin-bottom: 5px;
+    }
+    section .her-pg{
+        display: block;
+    }
+    .title-head li{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+    .offices{
+        margin: 0px 2px 0px 2px;
+    }
+    .hero-img{
+        height: 200px;
+    }
+    #office{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .offices div{
+        padding: 2px;
+        font-size: 10px;
+    }
+    .offices div a{
+        padding: 4px;
+    }
+    .projects-title{
+        margin-bottom: 12px;
+        height: 50px;
+    }
+    .ofice-blocks{
+        margin-right: 5px;
+    }
+    .project-wrap{
+        margin: 5px;
+    }
+    .item-title span{
+        font-weight: 200;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .services{
+        display: block;
+    }
+    .service-wrap{
+        padding: 5px;
+    }
+    nav div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .topnav a{
+        padding: 6px;
+        font-size: 12px;
+    }
 
   }
   
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.toggle {
       float: right;
@@ -229,7 +330,7 @@ footer .timezone{
       display: block;
       text-align: left;
     }
-  }
+  } */
 
 
   /* table{
